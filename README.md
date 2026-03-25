@@ -14,7 +14,7 @@ A browser-based Connect Four game featuring a human-versus-AI mode. The AI is po
 - **Difficulty Selector** — Easy (depth 2), Medium (depth 4), Hard (depth 6)
 - **Drop Animation** — smooth disc fall with bounce easing
 - **Win Flash** — winning cells pulse green before the result banner appears
-- **Zero dependencies** — single `index.html` file; pure vanilla HTML, CSS, and JavaScript
+- **Zero dependencies** — pure vanilla HTML, CSS, and JavaScript; no libraries or frameworks
 
 ## Quick Start
 
@@ -36,8 +36,10 @@ This starts a local HTTP server on `http://localhost:8765` and automatically ope
 
 ```
 Connect4AI/
-├── index.html   # The entire game — all HTML, CSS, and JavaScript in one file
-└── main.py      # Python launcher: serves index.html and opens the browser
+├── index.html   # HTML structure — links to style.css and game.js
+├── style.css    # All styling: design tokens, layout, animations, responsive rules
+├── game.js      # All logic: board engine, Minimax/α-β AI, visualizer rendering
+└── main.py      # Python launcher: serves the files and opens the browser
 ```
 
 ## How the AI Works
