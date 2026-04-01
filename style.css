@@ -330,3 +330,81 @@
       line-height: 1.55;
     }
     #stats-tip strong { color: var(--accent); font-weight: 600; }
+
+    /* ── AI EXPLANATION CARD ── */
+    .exp-card { border-left: 3px solid var(--accent); }
+    #exp-content { font-size: 0.75rem; line-height: 1.7; color: var(--text-muted); }
+    #exp-content strong { color: var(--text); }
+    .exp-score { color: var(--accent); font-weight: 700; }
+    .runners { color: #3d6080; font-size: 0.7rem; }
+
+    /* ── TREE CARD TITLE ROW ── */
+    .viz-card-title-row {
+      display: flex; align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12px;
+    }
+    .viz-card-title-row .viz-card-title { margin-bottom: 0; }
+
+    /* ── STEP MODE BUTTON ── */
+    .step-btn {
+      background: transparent;
+      border: 1px solid var(--border-md);
+      border-radius: 20px;
+      color: var(--text-muted);
+      padding: 3px 12px;
+      font-size: 0.68rem;
+      font-weight: 600;
+      cursor: pointer;
+      letter-spacing: 0.3px;
+      white-space: nowrap;
+      transition: color 0.15s, border-color 0.15s, background 0.15s;
+    }
+    .step-btn:hover { color: var(--accent); border-color: var(--accent-dim); }
+    .step-btn.active {
+      color: var(--accent);
+      border-color: var(--accent);
+      background: rgba(201,163,50,0.08);
+    }
+
+    /* ── STEP EXPLANATION TEXT ── */
+    #step-explain {
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      min-height: 22px;
+      padding: 6px 2px 2px;
+      border-top: 1px solid var(--border);
+      line-height: 1.55;
+      margin-top: 8px;
+      transition: color 0.2s;
+    }
+    #step-explain:empty { display: none; }
+    #step-explain strong { color: var(--accent); }
+    #step-explain .cut { color: #8a2a2a; }
+
+    /* ── TREE CLICK-TO-EXPLAIN ── */
+    .tree-hint {
+      font-size: 0.63rem; color: var(--text-muted); text-align: center;
+      padding: 5px 0 2px; opacity: 0.55; letter-spacing: 0.3px;
+    }
+    #tree-explain-box {
+      margin-top: 8px; border-radius: var(--radius-sm);
+      border: 1px solid var(--border-md); overflow: hidden;
+      font-size: 0.74rem; line-height: 1.65;
+      animation: fadeUp 0.2s ease;
+    }
+    .te-header {
+      padding: 8px 14px; font-weight: 700; font-size: 0.76rem;
+      letter-spacing: 0.3px;
+    }
+    .te-root   { background:#0b1e3f; color:#5b8ccc; border-bottom:1px solid #1e4890; }
+    .te-max    { background:#221a06; color:#c9a332; border-bottom:1px solid #6a5018; }
+    .te-min    { background:#200a0a; color:#b03030; border-bottom:1px solid #6a1a1a; }
+    .te-pruned { background:#130909; color:#c04040; border-bottom:1px solid #401818; }
+    .te-body {
+      padding: 10px 14px; color: var(--text-muted);
+      background: var(--surface2);
+    }
+    .te-body strong { color: var(--text); }
+    .te-hr { border:none; border-top:1px solid var(--border); margin:8px 0; }
+    .te-em { color:#2a4060; font-style:italic; font-size:0.68rem; }

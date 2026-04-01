@@ -38,6 +38,7 @@
     <h2>⬡ AI Visualizer</h2>
     <button id="btnViz">Hide</button>
   </div>
+
   <div id="visualizer">
 
     <!-- 1. Column Scores -->
@@ -50,6 +51,8 @@
     <div class="viz-card">
       <div class="viz-card-title">Minimax Search Tree — 2 Levels (α-β Pruning Shown)</div>
       <div id="tree-container"><svg id="tree-svg"></svg></div>
+      <p class="tree-hint">💡 Click any node to understand the search</p>
+      <div id="tree-explain-box" style="display:none"></div>
     </div>
 
     <!-- 3. Stats -->
